@@ -9,6 +9,7 @@
     <title>Workout Helper</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/index-css.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
  </head>
  <body>
      <!--Necessary scripts for Bootstrap - Don't Touch-->
@@ -17,29 +18,46 @@
      <script src="js/bootstrap.min.js"></script>
      
 <div class="container"> 
+    <!--
+  <div class="jumbotron" style="background-color:rgba(0,0,0,0)">
+    <h1 style="color: whitesmoke">Workout Helper</h1> 
+    <p style="color: whitesmoke">Get to it 💪</p> 
+  </div>
+    -->
+     <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper" style="background-color: rgba(0,0,0,0.3)">
+            <ul class="sidebar-nav">
+            <h1 style="color: whitesmoke; position:absolute; left: 20%" class="sidebar-brand">Workout Helper</h1>
+            <p>© 2015 Workout Helper - Aurora, Clive & Joe</p>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+    
  <div class="col-lg-12">
-  <h1>Workout Helper</h1>
-     <p>Get to it</p>
    <form action="/result" method="post">
-     <input type="checkbox" name="workout" value="chest">Chest<br>
-     <input type="checkbox" name="workout" value="triceps">Triceps<br>
-     <input type="checkbox" name="workout" value="biceps">Biceps<br>
-     <input type="checkbox" name="workout" value="legs">Legs<br>
-     <input type="checkbox" name="workout" value="shoulders">Shoulders<br>
-     <input type="checkbox" name="workout" value="back">Back<br>
-     <input type="checkbox" name="workout" value="cardio">Cardio<br>
-     <input type="submit" value="Submit">
+       <div class="checkbox">
+     <input type="checkbox" name="workout" value="chest" id="checkbox1" class="checkbox"><label for="checkbox1"> Chest</label><br>
+     <input type="checkbox" name="workout" value="triceps" id="checkbox2"><label for="checkbox2"> Triceps</label><br>
+     <input type="checkbox" name="workout" value="biceps" id="checkbox3"><label for="checkbox3"> Biceps</label><br>
+     <input type="checkbox" name="workout" value="legs" id="checkbox4"><label for="checkbox4"> Legs</label><br>
+     <input type="checkbox" name="workout" value="shoulders" id="checkbox5"><label for="checkbox5"> Shoulders</label><br>
+     <input type="checkbox" name="workout" value="back" id="checkbox6"><label for="checkbox6"> Back</label><br>
+     <input type="checkbox" name="workout" value="cardio" id="checkbox7"><label for="checkbox7"> Cardio</label><br>
+     <input type="submit" value="Submit" class="btn btn-success">
+       </div>
    </form>
  </div>
 </div>
      
 
-
+<!--
     <footer class="footer">
       <div class="container">
         <p class="text-muted">© 2015 Workout Helper - Aurora, Clive & Joe</p>
       </div>
     </footer>
-
+-->
  </body>
 </html>

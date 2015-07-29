@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <!--Necessary meta for Bootstrap - Don't Touch-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!--End Bootstrap Necessities, only add below this line-->
+    <title>Workout Helper</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/index-css.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+     <!--Necessary scripts for Bootstrap - Don't Touch-->
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js" type="text/javascript"></script>
+     <script src="js/bootstrap.min.js"></script>
+     
+<div class="container"> 
+ <div class="col-lg-12">
+  <h1>Workout Helper</h1>
+     <p>Get to it</p>
+   <form action="/result" method="post">
+     <input type="checkbox" name="workout" value="chest">Chest<br>
+     <input type="checkbox" name="workout" value="triceps">Triceps<br>
+     <input type="checkbox" name="workout" value="biceps">Biceps<br>
+     <input type="checkbox" name="workout" value="legs">Legs<br>
+     <input type="checkbox" name="workout" value="shoulders">Shoulders<br>
+     <input type="checkbox" name="workout" value="back">Back<br>
+     <input type="checkbox" name="workout" value="cardio">Cardio<br>
+     <input type="submit" value="Submit">
+   </form>
+ </div>
+</div>
+     
+
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">© 2015 Workout Helper - Aurora, Clive & Joe</p>
+      </div>
+    </footer>
+
+ </body>
+</html>

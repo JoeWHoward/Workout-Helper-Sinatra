@@ -21,20 +21,23 @@
      <!--Necessary scripts for Bootstrap - Don't Touch-->
      
 <div class="container"> 
-
     <!--
   <div class="jumbotron" style="background-color:rgba(0,0,0,0)">
     <h1 style="color: whitesmoke">Workout Helper</h1> 
     <p style="color: whitesmoke">Get to it 💪</p> 
   </div>
-    -->
+    -->   
+    <div id="twrap">
+     <div id="titlewrapper" style="background-color:rgba(0,0,0,0.3)">
+          <h1 id="main-title" class="sidebar-brand">Workout Helper</h1>
+     </div>
+    </div>
      <div id="wrapper">
         <!-- Sidebar -->
         <div id="sidebar-wrapper" style="background-color: rgba(0,0,0,0.3)">
-            <h1 id="main-title" class="sidebar-brand">Workout Helper</h1>
             <form action="/result" method="post" id="musicform">
                 
-                <span style="position:relative;left:35%">
+                <span style="position:relative;left:35%,back">
                     <select id="menulist" name="music" form="musicform" class="btn btn-success">
                         <option value="rock">Rock</option>
                         <option value="rap">Rap</option>

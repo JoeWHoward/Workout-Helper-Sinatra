@@ -29,25 +29,25 @@
         <!-- Sidebar -->
         <div id="sidebar-wrapper" style="background-color: rgba(0,0,0,0.3)">
             <ul class="sidebar-nav">
-            <h1 style="color: whitesmoke; position:absolute; left: 20%" class="sidebar-brand">Workout Helper</h1>
-            <p>© 2015 Workout Helper - Aurora, Clive & Joe</p>
+                <h1 style="color: whitesmoke; position:absolute; left: 22.5%" class="sidebar-brand">Workout Helper</h1>
             </ul>
+               <form action="/result" method="post">
+       <div class="checkbox" style="position: absolute; left: 30%;color:whitesmoke;top:20%">
+           <input type="checkbox" name="workout" value="chest" id="checkbox1" class="checkbox"><label for="checkbox1"> Chest</label><br>
+           <input type="checkbox" name="workout" value="triceps" id="checkbox2"><label for="checkbox2"> Triceps</label><br>
+           <input type="checkbox" name="workout" value="biceps" id="checkbox3"><label for="checkbox3"> Biceps</label><br>
+           <input type="checkbox" name="workout" value="legs" id="checkbox4"><label for="checkbox4"> Legs</label><br>
+           <input type="checkbox" name="workout" value="shoulders" id="checkbox5"><label for="checkbox5"> Shoulders</label><br>
+           <input type="checkbox" name="workout" value="back" id="checkbox6"><label for="checkbox6"> Back</label><br>
+           <input type="checkbox" name="workout" value="cardio" id="checkbox7"><label for="checkbox7"> Cardio</label><br>
+           <input style="top:125%;position:absolute;right:20%" type="submit" value="Submit" class="btn btn-success">
+       </div>
+   </form>
+            <p class="text-muted" style="position:absolute; left:20%; bottom:0">© 2015 Workout Helper</p>
         </div>
         <!-- /#sidebar-wrapper -->
     
  <div class="col-lg-12">
-   <form action="/result" method="post">
-       <div class="checkbox">
-     <input type="checkbox" name="workout" value="chest" id="checkbox1" class="checkbox"><label for="checkbox1"> Chest</label><br>
-     <input type="checkbox" name="workout" value="triceps" id="checkbox2"><label for="checkbox2"> Triceps</label><br>
-     <input type="checkbox" name="workout" value="biceps" id="checkbox3"><label for="checkbox3"> Biceps</label><br>
-     <input type="checkbox" name="workout" value="legs" id="checkbox4"><label for="checkbox4"> Legs</label><br>
-     <input type="checkbox" name="workout" value="shoulders" id="checkbox5"><label for="checkbox5"> Shoulders</label><br>
-     <input type="checkbox" name="workout" value="back" id="checkbox6"><label for="checkbox6"> Back</label><br>
-     <input type="checkbox" name="workout" value="cardio" id="checkbox7"><label for="checkbox7"> Cardio</label><br>
-     <input type="submit" value="Submit" class="btn btn-success">
-       </div>
-   </form>
  </div>
 </div>
      

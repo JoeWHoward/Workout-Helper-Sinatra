@@ -7,7 +7,11 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
-    background-image: url(../images/background.png)
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color:rgba(102,97,87,1)
 }
 .footer {
   position: absolute;
@@ -422,4 +426,19 @@ input[type="radio"] .styled:checked + label::after {
     background-color:rgba(126,192,88,1);
     color:whitesmoke;
     padding: 0 0 0 20px;
+}
+
+#rightsidebar {
+        z-index: 1000;
+    position: fixed;
+    left: 5000px;
+    width: 0;
+    height: 100%;
+    margin-left: 250px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }

@@ -1,25 +1,28 @@
 $workouts = {
-  "chest" => ["Bench Press", "Incline Bench Press", "Dumbbell Press", "Incline Dumbell Press", "Pushups","Incline Pushups","Decline Pushups", "Cable Crossover", "Butterfly", "Close Grip Bench", "Dips", "Dumbell Flys"],
+  "chest" => ["Bench Press", "Incline Bench Press", "Dumbbell Press", "Incline Dumbbell Press", "Pushups","Incline Pushups","Decline Pushups", "Cable Crossover", "Butterfly", "Close Grip Bench", "Dips", "Dumbbell Flys"],
   
-  "triceps" => ["Skullcrushers", "Decline Skullcrushers", "Tricep Pull Downs", "Reverse Grip Tricep Pull Downs","Tricep Dumbell Kickback", "Standing Dumbell Tricep Extension", "Kneeling Cable Tricep Extension"],
+  "triceps" => ["Skullcrushers", "Decline Skullcrushers", "Tricep PullDowns", "Reverse Grip Tricep Pull Downs","Tricep Dumbbell Kickback", "One Arm Dumbbell Extension", "Kneeling Cable Tricep Extension"],
   
-  "biceps" => ["Dumbell Curls", "Barbell Curls", "Concentration Curls","Overhead Cable Curls", "Hammer Curls", "Crossbody Hammer Curls", "Preacher Curls", "Reverse Cable Curls"],
+  "biceps" => ["Dumbbell Curls", "Barbell Curls", "Concentration Curls","Overhead Cable Curls", "Hammer Curls", "Crossbody Hammer Curls", "Preacher Curls", "Cable Curls", "Wrist Curls"],
   
-  "legs" => ["Barbell Squats", "Leg Press", "Calves", "Barbell Walking Lunges", "Dumbell Lunges", "Rope Jumping", "Leg Extensions", "Leg Curls", "Straight Leg Deadlifts", "Box Jumps"],
+  "legs" => ["Back Squats", "Squats","Front Squats", "Leg Press", "Calves", "Barbell Walking Lunges", "Dumbbell Lunges", "Rope Jumping", "Leg Extensions", "Leg Curls", "Straight Leg Deadlifts", "Box Jumps", "Goblet"],
   
-  "shoulders" => ["Overhead Press", "Clean and Press", "Clean and Jerk", "Standing Dumbell Press", "Sitting Dumbell Press", "Reverse Flys", "Front Dumbell Raise", "Side Lateral Raise", "Front Plate Raise"],
+  "shoulders" => ["Overhead Press", "Clean and Press", "Clean and Jerk", "Standing Dumbbell Press", "Sitting Dumbbell Press", "Reverse Flys", "Front Dumbbell Raise", "Side Lateral Raise", "Front Plate Raise", "Front Dumbbell Raise"],
   
-  "back" => ["Shrugs", "One Arm Pulls", "Barbell Deadlift", "T-Bar", "Seated Cable Rows", "Superman", "Inverted Row", "Chin-ups"],
+  "back" => ["Shrugs", "One Arm Pulls", "Barbell Deadlift", "T-Bar", "Seated Cable Rows", "Superman", "Inverted Row", "Chin up", "Lat Pulldowns"],
   
-  "abs" => ["Crunches", "Planks", "Ab Wheel", "Plate Twist"],
-  
-  "cardio" => ["Treadmill", "Basketball", "Stairmaster", "Elipitcal"]
+  "abs" => ["Crunches", "Planks", "Ab Wheel", "Plate Twist", "Back Extension", "Reverse Crunch"],
+   
+  "cardio" => ["Treadmill", "Basketball", "Stairmaster", "Elliptical"]
   }
 
 def randomize(hash)
+ hash.delete("music")
   @neworkout = []
   hash.each_value do | muscle |
     @neworkout.push($workouts[muscle].sample)
   end
   return @neworkout
 end
+
+  

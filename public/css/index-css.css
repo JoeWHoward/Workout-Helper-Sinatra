@@ -410,3 +410,16 @@ input[type="radio"] .styled:checked + label::after {
     font-size: 2.1em; 
     text-align:center;
 }
+
+#menulist {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height:32px;
+    width:30%;
+    border:0;
+    text-indent: 5%;
+    background-color:rgba(126,192,88,1);
+    color:whitesmoke;
+    padding: 0 0 0 20px;
+}

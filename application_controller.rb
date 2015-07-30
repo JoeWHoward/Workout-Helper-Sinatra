@@ -1,5 +1,7 @@
 require 'bundler'
+require_relative "models/workouts.rb"
 Bundler.require
+
 
 class MyApp < Sinatra::Base
 
@@ -8,13 +10,8 @@ class MyApp < Sinatra::Base
   end
   
   post "/result" do
-    puts params
+    randomize(params)
     erb :result
   end
 
 end
-
-git checkout aurora 
-git add -A
-git commit -m "base html"
-git push -u origin aurora

@@ -421,15 +421,14 @@ input[type="radio"] .styled:checked + label::after {
     -moz-appearance: none;
     appearance: none;
     height:32px;
-    width:4%;
-    position: fixed;
+    width:80px;
+    line-height: 1.42857143;
     border:0;
     text-indent: 5%;
     background-color:rgba(126,182,98,1);
     color:whitesmoke;
     padding: 0 0 0 20px;
-    bottom:43%;
-    left: 4.5%;
+    bottom: 43%;
     border: 1px solid transparent;
     border-radius: 4px;
 

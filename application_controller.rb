@@ -13,8 +13,3 @@ class MyApp < Sinatra::Base
   end
 
 end
-
-git checkout aurora 
-git add -A
-git commit -m "base html"
-git push -u origin aurora

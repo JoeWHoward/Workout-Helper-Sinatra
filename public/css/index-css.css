@@ -420,12 +420,23 @@ input[type="radio"] .styled:checked + label::after {
     -moz-appearance: none;
     appearance: none;
     height:32px;
-    width:30%;
+    width:4%;
+    position: fixed;
     border:0;
     text-indent: 5%;
-    background-color:rgba(126,192,88,1);
+    background-color:rgba(126,182,98,1);
     color:whitesmoke;
     padding: 0 0 0 20px;
+    top: 16%;
+    left: 4.5%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+
+}
+
+#menulist:hover {
+    background-color: #449d44;
+    border-color: #398439;
 }
 
 #rightsidebar {

@@ -1,5 +1,6 @@
 require 'bundler'
 require_relative "models/workouts.rb"
+require_relative 'models/result.rb'
 Bundler.require
 
 
@@ -10,8 +11,9 @@ class MyApp < Sinatra::Base
   end
   
   post "/result" do
-    randomize(params)
-    erb :result
+      randomize(params)
+      getResult(@neworkout)
+      erb :index
   end
 
 end

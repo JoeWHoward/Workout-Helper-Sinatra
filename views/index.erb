@@ -14,19 +14,10 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
  </head>
  <body>
-     <!--
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js" type="text/javascript"></script>
-    <script src="js/bootstrap.js"></script>-->
-     <!--Necessary scripts for Bootstrap - Don't Touch-->
+
      
 <div class="container"> 
-    <!--
-  <div class="jumbotron" style="background-color:rgba(0,0,0,0)">
-    <h1 style="color: whitesmoke">Workout Helper</h1> 
-    <p style="color: whitesmoke">Get to it 💪</p> 
-  </div>
-    -->   
+ 
     <div id="twrap">
      </a><div id="titlewrapper" style="background-color:rgba(0,0,0,0.3)">
         <a href="/"><h1 id="main-title" class="sidebar-brand">Workout Helper</h1></a>
@@ -68,27 +59,15 @@
     <div class="container" >
         <%=@resultString%>
      </div>
-<!--        <div class="panel panel-default" style="background-color:rgba(0,0,0,0.3);border:0;height:100%">
-            <div class="panel-body" style="height:100%;color:whitesmoke"><h1>Result 1</h1></div>
-        </div>
-        <div class="panel panel-default" style="background-color:rgba(0,0,0,0.3);border:0;height:100%">
-            <div class="panel-body" style="height:100%;color:whitesmoke;"><h1 style="position:absolute;top:50%">Result 2</h1><img src="http://www.online-image-editor.com//styles/2014/images/example_image.png" style="max-height: 300px; max-width:300px;float:right">  </div>
-        </div>
-    </div>-->
+
      <div style="position:fixed;top:0;right:0;height:100%;background-color:rgba(0,0,0,0.3);width:384px">
          <iframe src="<%=@playlist%>" frameborder="0" allowtransparency="true" style="top:0;right:0;position:fixed;height:100%;width:384px"></iframe>
-         <blockquote><h1 style="bottom:10%;position:fixed;color:whitesmoke;text-align:left;">"<strong>Motivation</strong> is what gets you started.<br><br><strong>Habit</strong> is what keeps you going."</h1>
-         <footer style="color:whitesmoke;bottom:11.5%;position:fixed;text-align:right;right:3%">
-             Jim Ryan
+         <blockquote><h1 style="bottom:10%;position:fixed;color:whitesmoke;text-align:left;">"<%=@quote%>"</h1>
+         <footer style="color:whitesmoke;bottom:7.5%;position:fixed;text-align:right;right:3%">
+             <%=@author%>
              </footer>
          </blockquote>
      </div>
-<!--
-    <footer class="footer">
-      <div class="container">
-        <p class="text-muted">© 2015 Workout Helper - Aurora, Clive & Joe</p>
-      </div>
-    </footer>
--->
+
  </body>
 </html>

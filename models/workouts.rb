@@ -17,7 +17,7 @@ $workouts = {
   }
 
 def randomize(hash)
- hash.delete("music")
+  hash.delete("music")
   @neworkout = []
   hash.each_value do | muscle |
     @neworkout.push($workouts[muscle].sample)

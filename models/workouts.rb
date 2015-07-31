@@ -3,11 +3,11 @@ $workouts = {
   
   "triceps" => ["Skullcrushers", "Decline Skullcrushers", "Tricep PullDowns", "Reverse Grip Tricep Pull Downs","Tricep Dumbbell Kickback", "One Arm Dumbbell Extension", "Kneeling Cable Tricep Extension"],
   
-  "biceps" => ["Dumbbell Curls", "Barbell Curls", "Concentration Curls","Overhead Cable Curls", "Hammer Curls", "Crossbody Hammer Curls", "Preacher Curls", "Cable Curls", "Wrist Curls"],
+  "biceps" => ["Dumbbell Curls", "Barbell Curls", "Concentration Curls","Overhead Cable Curls", "Hammer Curls", "Crossbody Hammer Curls", "Preacher Curls", "Cable Curls"],
   
   "legs" => ["Back Squats", "Squats","Front Squats", "Leg Press", "Calves", "Barbell Walking Lunges", "Dumbbell Lunges", "Rope Jumping", "Leg Extensions", "Leg Curls", "Straight Leg Deadlifts", "Box Jumps", "Goblet"],
   
-  "shoulders" => ["Overhead Press", "Clean and Press", "Clean and Jerk", "Standing Dumbbell Press", "Sitting Dumbbell Press", "Reverse Flys", "Front Dumbbell Raise", "Side Lateral Raise", "Front Plate Raise", "Front Dumbbell Raise"],
+  "shoulders" => ["Overhead Press", "Clean and Press", "Clean and Jerk", "Standing Dumbbell Press", "Sitting Dumbbell Press", "Reverse Flys", "Front Dumbbell Raise", "Side Lateral Raise", "Front Plate Raise"],
   
   "back" => ["Shrugs", "One Arm Pulls", "Barbell Deadlift", "T-Bar", "Seated Cable Rows", "Superman", "Inverted Row", "Chin up", "Lat Pulldowns"],
   

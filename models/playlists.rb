@@ -1,4 +1,4 @@
-playlists = {
+$playlists = {
     "rock" => ["https://embed.spotify.com/?uri=spotify%3Aalbum%3A2FAAqRXDFehrbPnkCsvom1", "https://embed.spotify.com/?uri=spotify%3Aalbum%3A7BRzbe1fcttI8mWicbVRAP", "https://embed.spotify.com/?uri=spotify%3Auser%3Aspotify_germany%3Aplaylist%3A3t2rgVs8EefizsOWlwtzfw"],
     
 
@@ -16,11 +16,14 @@ playlists = {
     "country" => ["https://embed.spotify.com/?uri=spotify%3Auser%3Aamatk001%3Aplaylist%3A5lnwEbO6bAe3hCzTJVqFwR","https://embed.spotify.com/?uri=spotify%3Auser%3A1258876775%3Aplaylist%3A4djZg5JGeWlOeX5zJVyVZ5","https://embed.spotify.com/?uri=spotify%3Auser%3Afitnessmagazine%3Aplaylist%3A6lqRhjdQtIZSEEDN3pz3Ev"]
 }
 
-def randomizeMusic(hash)
-  hash[:music]
-  @neworkout = []
-  hash.each_value do | muscle |
-    @neworkout.push($workouts[muscle].sample)
+def randomizeMusic(genre)
+  @playlist = "https://embed.spotify.com/?uri=spotify%3Aalbum%3A2FAAqRXDFehrbPnkCsvom1"
+  $playlists.each_key do | type |
+    if type == genre
+      @playlist = ($playlists[type].sample)
+    end
   end
-  return @neworkout
+  return @playlist
 end
+
+#puts randomizeMusic("rap")

@@ -13,7 +13,7 @@ class MyApp < Sinatra::Base
     erb :index
   end
   
-  post "/result" do
+  post "/" do
     randomizeMusic(params[:music])
     randomize(params)
     getResult(@neworkout)

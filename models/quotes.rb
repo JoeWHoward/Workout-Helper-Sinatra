@@ -16,6 +16,14 @@ $quotes = {
   "Benjamin Franklin" => ["Energy and persistence conquer all things."],
   
   "Ralph Waldo Emerson" => ["Nothing great was ever achieved without enthusiasm."],
+    
+  "Albert Einstein" => ["Insanity: doing the same thing over and over again and expecting different results."],
+    
+  "Jim Ryan" => ["Motivation is what gets you started. Habit is what keeps you going."],
+    
+  "Unknown" => ["Fear is what stops you... courage is what keeps you going."],
+    
+  "Unknown" => ["The finish line is just the beginning of a whole new race."]
   }
 
 def randomQuote()
@@ -36,21 +44,6 @@ end
 
 
 =begin
-"
-No act of kindness, however small, is ever wasted. 
--Aesop
-
-Insanity: doing the same thing over and over again and expecting different results. 
--Albert Einstein
-
-Ability is what you're capable of doing. Motivation determines what you do. Attitude determines how well you do it. 
--Lou Holtz
-
-Motivation is what gets you started. Habit is what keeps you going. 
--Jim Ryan
-
-I've missed more than 9,000 shots in my career. I've lost almost 300 games. 26 times, I've been trusted to take the game winning shot and missed. I've failed over and over and over again in my life. And that is why I succeed. 
--Michael Jordan
 
 Fear is what stops you... courages is what keeps you going. 
 -Unknown

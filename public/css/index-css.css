@@ -459,7 +459,7 @@ input[type="radio"] .styled:checked + label::after {
     position: fixed;
     left: 250px;
     width: 0;
-    height: 7%;
+    height: 7.5%;
     margin-left: -250px;
     top:0;
     overflow-y: auto;
